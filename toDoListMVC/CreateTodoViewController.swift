@@ -111,8 +111,10 @@ class CreateTodoViewController: UIViewController {
     private func addDatePickerInInputAccessoryView() {
         dateToolBar = UIToolbar()
         dateToolBar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         let doneBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(onDoneTapped))
-        dateToolBar.setItems([doneBtn], animated: true)
+        doneBtn.tintColor = #colorLiteral(red: 0, green: 0.5690457821, blue: 0.5746168494, alpha: 1)
+        dateToolBar.setItems([flexibleSpace,doneBtn], animated: true)
         datePicker.backgroundColor = .white
         datePicker.datePickerMode = .date
         datePicker.minimumDate = Date()
