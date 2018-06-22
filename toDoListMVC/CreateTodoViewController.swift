@@ -37,7 +37,7 @@ class CreateTodoViewController: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // creating json encoded model to send in body of the post
-        let dataToSave = ToDoListModel(taskTitle: taskTitleTextField.text ?? "", taskDescription: taskDescriptionTextField.text ?? "", taskAddedDate: Date(), expiryDate: Date())
+        let dataToSave = ToDoListModel(taskTitle: taskTitleTextField.text ?? "", taskDescription: taskDescriptionTextField.text ?? "", taskAddedDate: createDateString(fromDate: Date()), expiryDate: taskExpiryDateTextField.text!)
         do {
             let jsonBody = try JSONEncoder().encode(dataToSave)
             request.httpBody = jsonBody

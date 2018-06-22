@@ -11,8 +11,8 @@ import Foundation
 struct ToDoListModel: Codable {
     var taskTitle: String
     var taskDescription: String
-    var taskAddedDate: Date
-    var expiryDate: Date
+    var taskAddedDate: String
+    var expiryDate: String
     
     private enum CodingKeys: String, CodingKey {
         case taskTitle = "task_title"
