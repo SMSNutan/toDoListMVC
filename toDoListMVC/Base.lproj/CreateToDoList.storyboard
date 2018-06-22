@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VlZ-9w-JDo">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,17 +11,17 @@
             <objects>
                 <viewController id="XSu-LH-iLM" customClass="CreateTodoViewController" customModule="todoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c36-N4-XAg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YU-hQ-7xq">
-                                <rect key="frame" x="40" y="213.5" width="295" height="240"/>
+                                <rect key="frame" x="40" y="180" width="520" height="240"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VRQ-vJ-aaW">
-                                        <rect key="frame" x="20" y="20" width="255" height="140"/>
+                                        <rect key="frame" x="20" y="20" width="480" height="140"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTu-mu-Noy">
-                                                <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="loR-Pm-OaU"/>
                                                 </constraints>
@@ -34,7 +30,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-mv-i0o">
-                                                <rect key="frame" x="0.0" y="50" width="255" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="480" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="X73-L8-rWW"/>
                                                 </constraints>
@@ -43,7 +39,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task expiry date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cic-U2-6e0">
-                                                <rect key="frame" x="0.0" y="100" width="255" height="40"/>
+                                                <rect key="frame" x="0.0" y="100" width="480" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="0YL-0H-wOg"/>
                                                 </constraints>
@@ -54,7 +50,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-jX-dIY">
-                                        <rect key="frame" x="40" y="180" width="215" height="40"/>
+                                        <rect key="frame" x="40" y="180" width="440" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="5iT-gw-e7Q"/>
@@ -79,7 +75,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIH-90-S7C">
-                                <rect key="frame" x="128" y="158.5" width="120" height="45"/>
+                                <rect key="frame" x="240" y="125" width="120" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="heB-q0-gTv"/>
@@ -90,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for network call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaW-DX-eZG">
-                                <rect key="frame" x="98.5" y="493.5" width="179" height="20.5"/>
+                                <rect key="frame" x="210.5" y="460" width="179" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.96904999020000004" green="0.51476061340000001" blue="0.51334637400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -115,7 +111,7 @@
                         <outlet property="networkCallStatusLabel" destination="kaW-DX-eZG" id="mzT-0i-5tg"/>
                         <outlet property="saveButton" destination="3BX-jX-dIY" id="665-dd-ZB5"/>
                         <outlet property="taskDescriptionTextField" destination="6aF-mv-i0o" id="CYi-Yh-SlD"/>
-                        <outlet property="taskExpiryDate" destination="Cic-U2-6e0" id="tFN-H8-7qC"/>
+                        <outlet property="taskExpiryDateTextField" destination="Cic-U2-6e0" id="tFN-H8-7qC"/>
                         <outlet property="taskTitleTextField" destination="YTu-mu-Noy" id="ksC-xN-SKQ"/>
                     </connections>
                 </viewController>
